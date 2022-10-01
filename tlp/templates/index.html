@@ -1,0 +1,958 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>{{titre}}</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="{% static 'statique/img/favicon.png'%}" rel="icon">
+  <link href="{% static 'statique/img/apple-touch-icon.png'%}" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,600,700|Raleway:300,400,400i,500,500i,700,800,900" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="{% static 'statique/vendor/animate.css/animate.min.css'%}" rel="stylesheet">
+  <link href="{% static 'statique/vendor/bootstrap/css/bootstrap.min.css'%}" rel="stylesheet">
+  <link href="{% static 'statique/vendor/bootstrap-icons/bootstrap-icons.css'%}" rel="stylesheet">
+  <link href="{% static 'statique/vendor/boxicons/css/boxicons.min.css'%}" rel="stylesheet">
+  <link href="{% static 'statique/vendor/glightbox/css/glightbox.min.css'%}" rel="stylesheet">
+  <link href="{% static 'statique/vendor/swiper/swiper-bundle.min.css'%}" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="{% static 'statique/css/style.css'%}" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: eBusiness - v4.7.0
+  * Template URL: https://bootstrapmade.com/ebusiness-bootstrap-corporate-template/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top d-flex align-items-center">
+    <div class="container d-flex justify-content-between">
+
+      <div class="logo">
+        <h1><a href="index.html"><span>TL Partners</span> CONGO</a></h1>
+        <!-- Uncomment below if you prefer to use an image logo -->
+        <!-- <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+      </div>
+
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a class="nav-link scrollto active" href="#hero">Accueil</a></li>
+          <li><a class="nav-link scrollto" href="#about">Notre cabinet</a></li>
+          <li><a class="nav-link scrollto" href="#services">Services</a></li>
+          <li><a class="nav-link scrollto" href="#team">Equipe</a></li>
+          <li><a class="nav-link scrollto" href="#realisations">Realisations</a></li>
+          <li><a class="nav-link scrollto" href="#actualites">Actualités</a></li>
+          <li class="dropdown"><a href="#"><span>Liens utiles</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li class="dropdown"><a href="https://presidence.cd"><span>Présidence de la République</span> <i class="bi bi-chevron-right"></i></a>
+                <ul>
+                  <li><a href="https://igf.gouv.cd/">IGF</a></li>
+                  <li><a href="https://arptc.gouv.cd/">ARPTC</a></li>
+                  <li><a href="https://journalofficiel.cd/">Journal Officiel</a></li>
+                </ul>
+              </li>
+              <li class="dropdown"><a href="https://primature.gouv.cd/"><span>Primature</span> <i class="bi bi-chevron-right"></i></a>
+                <ul>
+                  <li><a href="https://finances.gouv.cd/">Ministère des Finances</a></li>
+                  <li><a href="https://economie.gouv.cd/">Ministère de l'Economie Nationale</a></li>
+                  <li><a href="http://www.ptntic.gouv.cd/">Ministère des PT-NTIC</a></li>
+                  <li><a href="https://minagri.gouv.cd/">Ministère de l'agriculture</a></li>
+                  <li><a href="https://budget.gouv.cd/">Ministère du Budget</a></li>
+                </ul>
+              </li>
+              <li class="dropdown"><a href="#"><span>Institutions Etatiques</span> <i class="bi bi-chevron-right"></i></a>
+                <ul>
+                  <li><a href="https://www.dgi.gouv.cd/">DGI</a></li>
+                  <li><a href="https://douane.gouv.cd/">DGDA</a></li>
+                  <li><a href="http://www.dgrad.gouv.cd/">DGRAD</a></li>
+                  <li><a href="https://cnss.cd/">CNSS</a></li>
+                  <li><a href="http://www.dgrk-rdc.com/">DGRK</a></li>
+                </ul>
+              </li>
+              <li class="dropdown"><a href="#"><span>Autres services</span> <i class="bi bi-chevron-right"></i></a>
+                <ul>
+                  <li><a href="https://www.bcc.cd/">Banque Centrale du CONGO</a></li>
+                  <li><a href="http://www.fec-rdc.com/">Fédération des ENtreprises du CONGO</a></li>
+                  <li><a href="https://www.investindrc.cd/fr/">ANAPI</a></li>
+                  <li><a href="https://www.guichetunique.cd/">Guichet Unique de Création d'Entreprise</a></li>
+                  <li><a href="http://cpcc-rdcongo.com/">Conseil Permanent de Comptabilité au CONGO</a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+
+    </div>
+  </header><!-- End Header -->
+
+  <!-- ======= hero Section ======= -->
+  <section id="hero">
+    <div class="hero-container">
+      <div id="heroCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="5000">
+
+        <ol id="hero-carousel-indicators" class="carousel-indicators"></ol>
+
+        <div class="carousel-inner" role="listbox">
+
+          <div class="carousel-item active" style="background-image: url(/static/statique/img/hero-carousel/1.jpg)">
+            <div class="carousel-container">
+              <div class="container">
+                <h2 class="animate__animated animate__fadeInDown">Le métier du cabinet </h2>
+                <p class="animate__animated animate__fadeInUp">Le métier d'un cabinet consiste à être au service des entreprises.</p>
+                <a href="#about" class="btn-get-started scrollto animate__animated animate__fadeInUp">Nous découvrir</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-item" style="background-image: url(/static/statique/img/hero-carousel/2.jpg)">
+            <div class="carousel-container">
+              <div class="container">
+                <h2 class="animate__animated animate__fadeInDown">Le rôle principal du cabinet </h2>
+                <p class="animate__animated animate__fadeInUp">Le cabinet joue le rôle de fournir tous les services liés à la comptabilité et la fiscalité, et y elaborer des rapports.</p>
+                <a href="#about" class="btn-get-started scrollto animate__animated animate__fadeInUp">Nous découvrir</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-item" style="background-image: url(/static/statique/img/hero-carousel/3.jpg)">
+            <div class="carousel-container">
+              <div class="container">
+                <h2 class="animate__animated animate__fadeInDown">Le rôle externe du cabinet </h2>
+                <p class="animate__animated animate__fadeInUp">Prestation au métier d'audit externe à des fins de certification et commissariats aux comptes.</p>
+                <a href="#about" class="btn-get-started scrollto animate__animated animate__fadeInUp">Nous découvrir</a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <a class="carousel-control-prev" href="#heroCarousel" role="button" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon bi bi-chevron-left" aria-hidden="true"></span>
+        </a>
+
+        <a class="carousel-control-next" href="#heroCarousel" role="button" data-bs-slide="next">
+          <span class="carousel-control-next-icon bi bi-chevron-right" aria-hidden="true"></span>
+        </a>
+
+      </div>
+    </div>
+  </section><!-- End Hero Section -->
+
+  <main id="main">
+
+    <!-- ======= About Section ======= -->
+    <div id="about" class="about-area area-padding">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 col-sm-12 col-xs-12">
+            <div class="section-headline text-center">
+              <h2>A propos de nous</h2>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <!-- single-well start-->
+          
+          <!-- single-well end-->
+          <div class="col-md-12 col-sm-12 col-xs-12">
+            <div class="well-middle">
+              <div class="single-well">
+                <a href="#">
+                  <h4 class="sec-head">Situation géographique</h4>
+                </a>
+                <p>
+                  Le cabinet TL Partners CONGO SARL, est enregistré au Registre de Commerce et Crédit Mobilier sous le n° RCCM/14-B-01707 et au numéro d’Identification Nationale 01-832-N7896X. Le cabinet a son siège social dans la Ville Province de KINSHASA, au n° 65 de l’avenue du Livre, Quartier Golf dans la Commune de la GOMBE, au 2ème local du 1er niveau de l’Immeuble BOMANGA 2.
+                </p>
+                <a href="#">
+                  <h4 class="sec-head">Historique</h4>
+                </a>
+                <p>
+                  Le cabinet TL Partners CONGO SARL, est créé depuis 2014 par Monsieur Thierry LOKESA SUAMUNU en qualité de Manager et qui est inscrit à l’ordre national des Experts Comptables sous le n° ONEC - EC/16.00218. Il a donc pour tâches de contrôler, surveiller et redresser la comptabilité des entreprises et est également Commissaire aux Comptes ayant pour rôle de contrôler la sincérité et la régularité des comptes annuels établis par une société ou une institution.
+                </p>
+                <a href="#">
+                  <h4 class="sec-head">Struture Fonctionnelle</h4>
+                </a>
+                <p>
+                  Toutes les interventions professionnelles du cabinet sont sous la responsabilité directe du Manager en la personne de Monsieur Thierry LOKESA SUAMUNU dont l’expérience en République Démocratique du CONGO en matière de gestion de fiduciaire date de plus de 20 ans.
+                </p>
+                <a href="#">
+                  <h4 class="sec-head">Centres de compétence</h4>
+                </a>
+                <p>
+                  Les centres de compétence du cabinet s’articulent autour de trois aspects principaux à savoir :
+                </p>
+                <ul>
+                  <li>
+                    <i class="bi bi-check"></i> L’expertise et l’assistance comptable
+                  </li>
+                  <li>
+                    <i class="bi bi-check"></i> L’expertise et l’assistance fiscale
+                  </li>
+                  <li>
+                    <i class="bi bi-check"></i> L’assistance en audit et commissariat aux comptes
+                  </li>
+                  <li>
+                    <i class="bi bi-check"></i> L'assistance en placement du personnel
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <!-- End col-->
+        </div>
+      </div>
+    </div><!-- End About Section -->
+
+    <!-- ======= Services Section ======= -->
+    <div id="services" class="services-area area-padding">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 col-sm-12 col-xs-12">
+            <div class="section-headline services-head text-center">
+              <h2>Nos services</h2>
+            </div>
+          </div>
+        </div>
+        <div class="row text-center">
+
+          {%for Services in model%}
+
+          <!-- Start Left services -->
+          <div class="col-md-4 col-sm-4 col-xs-12">
+            <div class="about-move">
+              <div class="services-details">
+                <div class="single-services">
+                  <a class="services-icon" href="#">
+                    <i class="bi bi-calculator"></i>
+                  </a>
+                  <h4>{{Services.Libellé}}</h4>
+                  <p>
+                    {{Services.Commentaires}}
+                  </p>
+                </div>
+              </div>
+              <!-- end about-details -->
+            </div>
+          </div>
+
+          {%endfor%}
+          
+        </div>
+      </div>
+    </div><!-- End Services Section -->
+    
+
+    <!-- ======= Team Section ======= -->
+    <div id="team" class="our-team-area area-padding">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 col-sm-12 col-xs-12">
+            <div class="section-headline text-center">
+              <h2>Notre equipe professionnelle</h2>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          {%for Equipe in equipes%}
+          <div  class="col-md-3 col-sm-3 col-xs-12">
+            <div class="single-team-member">
+              <div  class="team-img">
+                <a href="#">
+                  <img style="width:640;height:300px;"  src={{Equipe.Profil.url}} alt="">
+                </a>
+                <div class="team-social-icon text-center">
+                  <ul>
+                    <li>
+                      <a href="mailto:{{Equipe.Adresse_mail}}">
+                        <i class="bi bi-google"></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="{{Equipe.Lien_whatsapp}}">
+                        <i class="bi bi-whatsapp"></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="{{Equipe.Lien_fcbk}}">
+                        <i class="bi bi-facebook"></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="{{Equipe.Lien_tweet}}">
+                        <i class="bi bi-twitter"></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="{{Equipe.Lien_insta}}">
+                        <i class="bi bi-instagram"></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="{{Equipe.Lien_linkedin}}">
+                        <i class="bi bi-linkedin"></i>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="team-content text-center">
+                <h6>{{Equipe.Nom_complet}}</h6>
+                <p>{{Equipe.Fonction}}</p>
+              </div>
+            </div>
+          </div>
+      
+          {%endfor%}
+
+        </div>
+      </div>
+    </div><!-- End Team Section -->
+
+    <!-- ======= Rviews Section ======= -->
+    <div class="reviews-area">
+      <div class="row g-0">
+        <div class="col-lg-12 work-right-text d-flex align-items-center">
+          <div class="section-headline text-center">
+            <div class="px-5 py-5 py-lg-0">
+              <h2>Pourquoi travailler avec nous</h2>
+              <p>Le cabinet ayant la responsabilité de traiter et défendre tous les dossiers fiscaux sur base des textes légaux et réglementaires, faisait à chaque période cette tâche. Cette dernière commence toujours par un ordre de mission ou ordre de service des organes de l’Etat (la DGI, la DGRAD, la DGRK, les ministères, etc.) ou encore un ordre de vérification ou de contre-vérification, où sur les dernières sont précisés la période concernée et les éléments concernant l’analyse du dossier.</p>
+              <p>Le cabinet a la charge de les apprêter afin de les présenter à l’organe chargée de la mission. Les éléments étant transmis par correspondance officielle, l’équipe en mission devra en retour après analyse de ces éléments transmis, établir une feuille d’observations qui fera l’objet d’un débat dans une réunion technique entre l’équipe en mission et celle du cabinet qui sera désignée par le Manager lui-même (généralement composée de 2 auditeurs, dont un est Sénior et l’autre Junior).</p>
+              <p>Après débat et harmonisation des vues, il ressort soit un Procès-Verbal de non-lieu soit un avis de redressement. Les deux équipes finissent par chuter par un Procès-Verbal de non-lieu lorsque l’entreprise cliente est en règle avec l’objet sous examen. Par contre, un avis de vérification ou contre-vérification aboutit par un avis de redressement lorsque l’entreprise est en fraude fiscale (lorsqu’il s’agit d’un impôt ou une taxe) ou en absence de déclaration (le système fiscal congolais étant déclaratif) et cela est suivi par des amendes et pénalités.</p>
+              <a href="#contact" class="ready-btn scrollto">Contactez-nous</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div><!-- End Rviews Section -->
+
+    <!-- ======= Portfolio Section ======= -->
+    <div id="realisations" class="portfolio-area area-padding fix">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+            <div class="section-headline text-center">
+              <h2>Nos réalisations</h2>
+            </div>
+          </div>
+        </div>
+        <div class="row wesome-project-1 fix">
+          <!-- Start Portfolio -page -->
+          <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+            <ul id="portfolio-flters">
+              <li data-filter="*" class="filter-active">All</li>
+              <li data-filter=".filter-app">App</li>
+              <li data-filter=".filter-card">Card</li>
+              <li data-filter=".filter-web">Web</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="row awesome-project-content portfolio-container">
+
+          <!-- portfolio-item start -->
+          <div class="col-md-4 col-sm-4 col-xs-12 portfolio-item filter-app portfolio-item">
+            <div class="single-awesome-project">
+              <div class="awesome-img">
+                <a href="#"><img src="{% static 'statique/img/portfolio/1.jpg'%}" alt="" /></a>
+                <div class="add-actions text-center">
+                  <div class="project-dec">
+                    <a class="portfolio-lightbox" data-gallery="myGallery" href="{% static 'statique/img/portfolio/1.jpg'%}">
+                      <h4>Business City</h4>
+                      <span>Web Development</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- portfolio-item end -->
+
+          <!-- portfolio-item start -->
+          <div class="col-md-4 col-sm-4 col-xs-12 portfolio-item filter-web">
+            <div class="single-awesome-project">
+              <div class="awesome-img">
+                <a href="#"><img src="{% static 'statique/img/portfolio/2.jpg'%}" alt="" /></a>
+                <div class="add-actions text-center">
+                  <div class="project-dec">
+                    <a class="portfolio-lightbox" data-gallery="myGallery" href="{% static 'statique//img/portfolio/2.jpg'%}">
+                      <h4>Blue Sea</h4>
+                      <span>Photosho</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- portfolio-item end -->
+
+          <!-- portfolio-item start -->
+          <div class="col-md-4 col-sm-4 col-xs-12 portfolio-item filter-card">
+            <div class="single-awesome-project">
+              <div class="awesome-img">
+                <a href="#"><img src="{% static 'statique/img/portfolio/3.jpg'%}" alt="" /></a>
+                <div class="add-actions text-center">
+                  <div class="project-dec">
+                    <a class="portfolio-lightbox" data-gallery="myGallery" href="{% static 'statique/img/portfolio/3.jpg'%}">
+                      <h4>Beautiful Nature</h4>
+                      <span>Web Design</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- portfolio-item end -->
+
+          <!-- portfolio-item start -->
+          <div class="col-md-4 col-sm-4 col-xs-12 portfolio-item filter-web">
+            <div class="single-awesome-project">
+              <div class="awesome-img">
+                <a href="#"><img src="{% static 'statique/img/portfolio/4.jpg'%}" alt="" /></a>
+                <div class="add-actions text-center">
+                  <div class="project-dec">
+                    <a class="portfolio-lightbox" data-gallery="myGallery" href="{% static 'statique/img/portfolio/4.jpg'%}">
+                      <h4>Creative Team</h4>
+                      <span>Web design</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- portfolio-item end -->
+
+          <!-- portfolio-item start -->
+          <div class="col-md-4 col-sm-4 col-xs-12 portfolio-item filter-app">
+            <div class="single-awesome-project">
+              <div class="awesome-img">
+                <a href="#"><img src="{% static 'statique/img/portfolio/5.jpg'%}" alt="" /></a>
+                <div class="add-actions text-center text-center">
+                  <div class="project-dec">
+                    <a class="portfolio-lightbox" data-gallery="myGallery" href="{% static 'statique/img/portfolio/5.jpg'%}">
+                      <h4>Beautiful Flower</h4>
+                      <span>Web Development</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- portfolio-item end -->
+
+          <!-- portfolio-item start -->
+          <div class="col-md-4 col-sm-4 col-xs-12 portfolio-item filter-web">
+            <div class="single-awesome-project">
+              <div class="awesome-img">
+                <a href="#"><img src="{% static 'statique/img/portfolio/6.jpg'%}" alt="" /></a>
+                <div class="add-actions text-center">
+                  <div class="project-dec">
+                    <a class="portfolio-lightbox" data-gallery="myGallery" href="{% static 'statique/img/portfolio/6.jpg'%}">
+                      <h4>Night Hill</h4>
+                      <span>Photoshop</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- portfolio-item end -->
+
+        </div>
+      </div>
+    </div><!-- End Portfolio Section -->
+
+    <!-- ======= Pricing Section ======= -->
+    <div id="pricing" class="pricing-area area-padding">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 col-sm-12 col-xs-12">
+            <div class="section-headline text-center">
+              <h2>Pricing Table</h2>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-4 col-sm-4 col-xs-12">
+            <div class="pri_table_list">
+              <h3>basic <br /> <span>$80 / month</span></h3>
+              <ol>
+                <li class="check"><i class="bi bi-check"></i><span>Online system</span></li>
+                <li class="check"><i class="bi bi-x"></i><span>Full access</span></li>
+                <li class="check"><i class="bi bi-check"></i><span>Free apps</span></li>
+                <li class="check"><i class="bi bi-check"></i><span>Multiple slider</span></li>
+                <li class="cross"><i class="bi bi-x"></i><span>Free domin</span></li>
+                <li class="cross"><i class="bi bi-x"></i><span>Support unlimited</span></li>
+                <li class="check"><i class="bi bi-check"></i><span>Payment online</span></li>
+                <li class="check"><i class="bi bi-x"></i><span>Cash back</span></li>
+              </ol>
+              <button>sign up now</button>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-4 col-xs-12">
+            <div class="pri_table_list active">
+              <span class="saleon">top sale</span>
+              <h3>standard <br /> <span>$110 / month</span></h3>
+              <ol>
+                <li class="check"><i class="bi bi-check"></i><span>Online system</span></li>
+                <li class="check"><i class="bi bi-check"></i><span>Full access</span></li>
+                <li class="check"><i class="bi bi-check"></i><span>Free apps</span></li>
+                <li class="check"><i class="bi bi-check"></i><span>Multiple slider</span></li>
+                <li class="cross"><i class="bi bi-x"></i><span>Free domin</span></li>
+                <li class="check"><i class="bi bi-check"></i><span>Support unlimited</span></li>
+                <li class="check"><i class="bi bi-check"></i><span>Payment online</span></li>
+                <li class="cross"><i class="bi bi-x"></i><span>Cash back</span></li>
+              </ol>
+              <button>sign up now</button>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-4 col-xs-12">
+            <div class="pri_table_list">
+              <h3>premium <br /> <span>$150 / month</span></h3>
+              <ol>
+                <li class="check"><i class="bi bi-check"></i><span>Online system</span></li>
+                <li class="check"><i class="bi bi-check"></i><span>Full access</span></li>
+                <li class="check"><i class="bi bi-check"></i><span>Free apps</span></li>
+                <li class="check"><i class="bi bi-check"></i><span>Multiple slider</span></li>
+                <li class="check"><i class="bi bi-check"></i><span>Free domin</span></li>
+                <li class="check"><i class="bi bi-check"></i><span>Support unlimited</span></li>
+                <li class="check"><i class="bi bi-check"></i><span>Payment online</span></li>
+                <li class="check"><i class="bi bi-check"></i><span>Cash back</span></li>
+              </ol>
+              <button>sign up now</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div><!-- End Pricing Section -->
+
+    <!-- ======= Testimonials Section ======= -->
+    <div id="testimonials" class="testimonials">
+      <div class="container">
+
+        <div class="testimonials-slider swiper">
+          <div class="swiper-wrapper">
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <img src="{% static 'statique/img/testimonials/testimonials-1.jpg'%}" class="testimonial-img" alt="">
+                <h3>Saul Goodman</h3>
+                <h4>Ceo &amp; Founder</h4>
+                <p>
+                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                  Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus. Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at semper.
+                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                </p>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <img src="{% static 'statique/img/testimonials/testimonials-2.jpg'%}" class="testimonial-img" alt="">
+                <h3>Sara Wilsson</h3>
+                <h4>Designer</h4>
+                <p>
+                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                  Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid cillum eram malis quorum velit fore eram velit sunt aliqua noster fugiat irure amet legam anim culpa.
+                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                </p>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <img src="{% static 'statique/img/testimonials/testimonials-3.jpg'%}" class="testimonial-img" alt="">
+                <h3>Jena Karlis</h3>
+                <h4>Store Owner</h4>
+                <p>
+                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                  Enim nisi quem export duis labore cillum quae magna enim sint quorum nulla quem veniam duis minim tempor labore quem eram duis noster aute amet eram fore quis sint minim.
+                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                </p>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <img src="{% static 'statique/img/testimonials/testimonials-4.jpg'%}" class="testimonial-img" alt="">
+                <h3>Matt Brandon</h3>
+                <h4>Freelancer</h4>
+                <p>
+                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                  Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export minim fugiat minim velit minim dolor enim duis veniam ipsum anim magna sunt elit fore quem dolore labore illum veniam.
+                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                </p>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <img src="{% static 'statique/img/testimonials/testimonials-5.jpg'%}" class="testimonial-img" alt="">
+                <h3>John Larson</h3>
+                <h4>Entrepreneur</h4>
+                <p>
+                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                  Quis quorum aliqua sint quem legam fore sunt eram irure aliqua veniam tempor noster veniam enim culpa labore duis sunt culpa nulla illum cillum fugiat legam esse veniam culpa fore nisi cillum quid.
+                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                </p>
+              </div>
+            </div><!-- End testimonial item -->
+
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+
+      </div>
+    </div><!-- End Testimonials Section -->
+
+    <!-- ======= Blog Section ======= -->
+    <div id="actualites" class="blog-area">
+      <div class="blog-inner area-padding">
+        <div class="blog-overly"></div>
+        <div class="container ">
+          <div class="row">
+            <div class="col-md-12 col-sm-12 col-xs-12">
+              <div class="section-headline text-center">
+                <h2>Latest News</h2>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <!-- Start Left Blog -->
+            <div class="col-md-4 col-sm-4 col-xs-12">
+              <div class="single-blog">
+                <div class="single-blog-img">
+                  <a href="blog.html">
+                    <img src="{% static 'statique/img/blog/1.jpg'%}" alt="">
+                  </a>
+                </div>
+                <div class="blog-meta">
+                  <span class="comments-type">
+                    <i class="fa fa-comment-o"></i>
+                    <a href="#">13 comments</a>
+                  </span>
+                  <span class="date-type">
+                    <i class="fa fa-calendar"></i>2016-03-05 / 09:10:16
+                  </span>
+                </div>
+                <div class="blog-text">
+                  <h4>
+                    <a href="blog.html">Assumenda repud eum veniam</a>
+                  </h4>
+                  <p>
+                    Lorem ipsum dolor sit amet conse adipis elit Assumenda repud eum veniam optio modi sit explicabo nisi magnam quibusdam.sit amet conse adipis elit Assumenda repud eum veniam optio modi sit explicabo nisi magnam quibusdam.
+                  </p>
+                </div>
+                <span>
+                  <a href="blog.html" class="ready-btn">Read more</a>
+                </span>
+              </div>
+              <!-- Start single blog -->
+            </div>
+            <!-- End Left Blog-->
+            <!-- Start Left Blog -->
+            <div class="col-md-4 col-sm-4 col-xs-12">
+              <div class="single-blog">
+                <div class="single-blog-img">
+                  <a href="blog.html">
+                    <img src="{% static 'statique/img/blog/2.jpg'%}" alt="">
+                  </a>
+                </div>
+                <div class="blog-meta">
+                  <span class="comments-type">
+                    <i class="fa fa-comment-o"></i>
+                    <a href="#">130 comments</a>
+                  </span>
+                  <span class="date-type">
+                    <i class="fa fa-calendar"></i>2016-03-05 / 09:10:16
+                  </span>
+                </div>
+                <div class="blog-text">
+                  <h4>
+                    <a href="blog.html">Explicabo magnam quibusdam.</a>
+                  </h4>
+                  <p>
+                    Lorem ipsum dolor sit amet conse adipis elit Assumenda repud eum veniam optio modi sit explicabo nisi magnam quibusdam.sit amet conse adipis elit Assumenda repud eum veniam optio modi sit explicabo nisi magnam quibusdam.
+                  </p>
+                </div>
+                <span>
+                  <a href="blog.html" class="ready-btn">Read more</a>
+                </span>
+              </div>
+              <!-- Start single blog -->
+            </div>
+            <!-- End Left Blog-->
+            <!-- Start Right Blog-->
+            <div class="col-md-4 col-sm-4 col-xs-12">
+              <div class="single-blog">
+                <div class="single-blog-img">
+                  <a href="blog.html">
+                    <img src="{% static 'statique/img/blog/3.jpg'%}" alt="">
+                  </a>
+                </div>
+                <div class="blog-meta">
+                  <span class="comments-type">
+                    <i class="fa fa-comment-o"></i>
+                    <a href="#">10 comments</a>
+                  </span>
+                  <span class="date-type">
+                    <i class="fa fa-calendar"></i>2016-03-05 / 09:10:16
+                  </span>
+                </div>
+                <div class="blog-text">
+                  <h4>
+                    <a href="blog.html">Lorem ipsum dolor sit amet</a>
+                  </h4>
+                  <p>
+                    Lorem ipsum dolor sit amet conse adipis elit Assumenda repud eum veniam optio modi sit explicabo nisi magnam quibusdam.sit amet conse adipis elit Assumenda repud eum veniam optio modi sit explicabo nisi magnam quibusdam.
+                  </p>
+                </div>
+                <span>
+                  <a href="blog.html" class="ready-btn">Read more</a>
+                </span>
+              </div>
+            </div>
+            <!-- End Right Blog-->
+          </div>
+        </div>
+      </div>
+    </div><!-- End Blog Section -->
+
+    <!-- ======= Suscribe Section ======= -->
+    <div class="suscribe-area">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 col-md-12 col-sm-12 col-xs=12">
+            <div class="suscribe-text text-center">
+              <h3>Bienvenue sur notre site</h3>
+              <a class="sus-btn" href="#contact">Dites nous ce dont vous avez besoin</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div><!-- End Suscribe Section -->
+
+    <!-- ======= Contact Section ======= -->
+    <div id="contact" class="contact-area">
+      <div class="contact-inner area-padding">
+        <div class="contact-overly"></div>
+        <div class="container ">
+          <div class="row">
+            <div class="col-md-12 col-sm-12 col-xs-12">
+              <div class="section-headline text-center">
+                <h2>Nous contacter</h2>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <!-- Start contact icon column -->
+            <div class="col-md-4">
+              <div class="contact-icon text-center">
+                <div class="single-icon">
+                  <i class="bi bi-phone"></i>
+                  <p>
+                    Appel : +243 999 263 967<br>
+                    <span>Lundi-vendredi (8h00-16h30)</span>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <!-- Start contact icon column -->
+            <div class="col-md-4">
+              <div class="contact-icon text-center">
+                <div class="single-icon">
+                  <i class="bi bi-envelope"></i>
+                  <p>
+                    Email: info@cab-tlpartners.com<br>
+                    <span>Web: https://cab-tlpartners.com</span>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <!-- Start contact icon column -->
+            <div class="col-md-4">
+              <div class="contact-icon text-center">
+                <div class="single-icon">
+                  <i class="bi bi-geo-alt"></i>
+                  <p>
+                    61, Avenue du Livre - Quartier GOLF<br>
+                    <span>Kinshasa GOMBE</span>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+
+            <!-- Start Google Map -->
+            <div class="col-md-6">
+              <!-- Start Map -->
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d22864.11283411948!2d-73.96468908098944!3d40.630720240038435!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNew+York%2C+NY%2C+USA!5e0!3m2!1sen!2sbg!4v1540447494452" width="100%" height="380" frameborder="0" style="border:0" allowfullscreen></iframe>
+              <!-- End Map -->
+            </div>
+            <!-- End Google Map -->
+
+            <!-- Start  contact -->
+            <div class="col-md-6">
+              <div class="form contact-form">
+                <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+                  <div class="form-group">
+                    <input type="text" name="name" class="form-control" id="name" placeholder="Nom complet" required>
+                  </div>
+                  <div class="form-group mt-3">
+                    <input type="email" class="form-control" name="email" id="email" placeholder="Votre adresse mail" required>
+                  </div>
+                  <div class="form-group mt-3">
+                    <input type="text" class="form-control" name="subject" id="subject" placeholder="Objet" required>
+                  </div>
+                  <div class="form-group mt-3">
+                    <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
+                  </div>
+                  <div class="my-3">
+                    <div class="loading">Chargement</div>
+                    <div class="error-message"></div>
+                    <div class="sent-message">Votre message a été envoyé avec succès !!! Merci</div>
+                  </div>
+                  <div class="text-center"><button type="submit">Envoyer le message</button></div>
+                </form>
+              </div>
+            </div>
+            <!-- End Left contact -->
+          </div>
+        </div>
+      </div>
+    </div><!-- End Contact Section -->
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer>
+    <div class="footer-area">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <div class="footer-content">
+              <div class="footer-head">
+                <div class="footer-logo">
+                  <h2><span>TL Partners</span> CONGO</h2>
+                </div>
+
+                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis.</p>
+                <div class="footer-icons">
+                  <ul>
+                    <li>
+                      <a href="mailto:contact.tlp2014@gmail.com"><i class="bi bi-google"></i></a>
+                    </li>
+                    <li>
+                      <a href="https://wa.me/243899501186"><i class="bi bi-whatsapp"></i></a>
+                    </li>
+                    <li>
+                      <a href="#"><i class="bi bi-facebook"></i></a>
+                    </li>
+                    <li>
+                      <a href="#"><i class="bi bi-twitter"></i></a>
+                    </li>
+                    <li>
+                      <a href="#"><i class="bi bi-instagram"></i></a>
+                    </li>
+                    <li>
+                      <a href="#"><i class="bi bi-linkedin"></i></a>
+                    </ul>
+                    </li>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- end single footer -->
+          <div class="col-md-4">
+            <div class="footer-content">
+              <div class="footer-head">
+                <h4>information</h4>
+                <p>
+                  Votre partenaire fiscal, prêt à vous accompagner.
+                </p>
+                <div class="footer-contacts">
+                  <p><span>Tel :</span> +243 899 501 186</p>
+                  <p><span>Email :</span> contact.tlp2014@gmail.com</p>
+                  <p><span>Horaire de service :</span> 8h00-16h30</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- end single footer -->
+          <div class="col-md-4">
+            <div class="footer-content">
+              <div class="footer-head">
+                <h4>Instagram</h4>
+                <div class="flicker-img">
+                  <a href="#"><img src="{% static 'statique/img/portfolio/1.jpg'%}" alt=""></a>
+                  <a href="#"><img src="{% static 'statique/img/portfolio/2.jpg'%}" alt=""></a>
+                  <a href="#"><img src="{% static 'statique/img/portfolio/3.jpg'%}" alt=""></a>
+                  <a href="#"><img src="{% static 'statique/img/portfolio/4.jpg'%}" alt=""></a>
+                  <a href="#"><img src="{% static 'statique/img/portfolio/5.jpg'%}" alt=""></a>
+                  <a href="#"><img src="{% static 'statique/img/portfolio/6.jpg'%}" alt=""></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-area-bottom">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 col-sm-12 col-xs-12">
+            <div class="copyright text-center">
+              <p>
+                &copy; Copyright <strong>FBN-Corporation</strong>. Tous droits réservés
+              </p>
+            </div>
+            <div class="credits">
+              <!--
+              All the links in the footer should remain intact.
+              You can delete the links only if you purchased the pro version.
+              Licensing information: https://bootstrapmade.com/license/
+              Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=eBusiness
+            -->
+              Design by <a href="https://bootstrapmade.com/">FBN-Corporation</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer><!-- End  Footer -->
+
+  <div id="preloader"></div>
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="{% static 'statique/vendor/bootstrap/js/bootstrap.bundle.min.js'%}"></script>
+  <script src="{% static 'statique/vendor/glightbox/js/glightbox.min.js'%}"></script>
+  <script src="{% static 'statique/vendor/isotope-layout/isotope.pkgd.min.js'%}"></script>
+  <script src="{% static 'statique/vendor/swiper/swiper-bundle.min.js'%}"></script>
+  <script src="{% static 'statique/vendor/php-email-form/validate.js'%}"></script>
+
+  <!-- Template Main JS File -->
+  <script src="{%static 'statique/js/main.js'%}"></script>
+
+</body>
+
+</html>
