@@ -1,0 +1,54 @@
+<div class="swiper-slide">
+              <div class="testimonial-item">
+                <img src="{% static 'statique/img/testimonials/testimonials-1.jpg'%}" class="testimonial-img" alt="">
+                <h3>Thierry LOKESA SUAMUNU</h3>
+                <h4>Manager</h4>
+                <p>
+                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                  La réussite de moindre effort n'existe pas, seul le travail dur en est l'option idéeale.
+                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                </p>
+              </div>
+            </div><!-- End testimonial item -->
+
+<div class="reviews-area">
+      <div class="row g-0">
+        <div class="col-lg-12 work-right-text d-flex align-items-center">
+          <div class="section-headline text-center">
+            <div class="px-5 py-5 py-lg-0">
+              <h2>Pourquoi travailler avec nous</h2>
+              <p>Le cabinet ayant la responsabilité de traiter et défendre tous les dossiers fiscaux sur base des textes légaux et réglementaires, faisait à chaque période cette tâche. Cette dernière commence toujours par un ordre de mission ou ordre de service des organes de l’Etat (la DGI, la DGRAD, la DGRK, les ministères, etc.) ou encore un ordre de vérification ou de contre-vérification, où sur les dernières sont précisés la période concernée et les éléments concernant l’analyse du dossier.</p>
+              <p>Le cabinet a la charge de les apprêter afin de les présenter à l’organe chargée de la mission. Les éléments étant transmis par correspondance officielle, l’équipe en mission devra en retour après analyse de ces éléments transmis, établir une feuille d’observations qui fera l’objet d’un débat dans une réunion technique entre l’équipe en mission et celle du cabinet qui sera désignée par le Manager lui-même (généralement composée de 2 auditeurs, dont un est Sénior et l’autre Junior).</p>
+              <p>Après débat et harmonisation des vues, il ressort soit un Procès-Verbal de non-lieu soit un avis de redressement. Les deux équipes finissent par chuter par un Procès-Verbal de non-lieu lorsque l’entreprise cliente est en règle avec l’objet sous examen. Par contre, un avis de vérification ou contre-vérification aboutit par un avis de redressement lorsque l’entreprise est en fraude fiscale (lorsqu’il s’agit d’un impôt ou une taxe) ou en absence de déclaration (le système fiscal congolais étant déclaratif) et cela est suivi par des amendes et pénalités.</p>
+              <a href="#contact" class="ready-btn scrollto">Contactez-nous</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div><!-- End Rviews Section -->
+
+Rappelle aux contribuables relevant de la DGE qu’ils sont tenus de souscrire leurs déclarations fiscales par voie électronique à partir du 1er Octobre 2022. A cet effet, aucune déclaration physique ne sera réceptionnée sauf en cas de problème technique informé au préalable.
+
+A dater du 1er Octobre 2022, tous les contribuables relevant de la DGE ont l'obligation de souscrire en ligne leurs déclarations ...
+
+<table class="table">
+                <thead>
+                  <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">First</th>
+                    <th scope="col">Last</th>
+                    <th scope="col">Handle</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {%for m in listmessages %}
+                  <tr>
+                    <th scope="row">{{m.Nom_complet}}</th>
+                    <td>{{m.email}}</td>
+                    <td>{{m.objet}}</td>
+                    <td>{{m.message}}</td>
+                    <td><form action="{% url 'tlp_post_contact'%}" method="POST" ><button class="btn btn-primary">Delete</button></form></td>
+                  </tr>
+                  {%endfor%}
+                </tbody>
+              </table>
