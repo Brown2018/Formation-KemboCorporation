@@ -27,3 +27,13 @@ class Equipe(models.Model):
     
     def __str__(self):
         return self.Nom_complet
+    
+
+class Model_Message(models.Model):
+    Nom_complet = models.CharField(max_length=30)
+    email = models.CharField(max_length=50)
+    objet = models.CharField(max_length=50)
+    message = models.TextField(max_length=450)
+    def __str__(self):
+        return self.email
+    

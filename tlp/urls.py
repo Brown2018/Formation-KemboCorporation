@@ -7,4 +7,6 @@ from django.conf.urls.static import static
 
 urlpatterns = [
     path('', views.index, name='index'),
+    path('post', views.postMessage, name='tlp_post_contact'),
+    
 ] 
